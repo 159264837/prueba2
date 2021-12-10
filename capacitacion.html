@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >   
+<head>
+        <meta name="viewport" content="with=divice-width, initial-scale=1.0">
+         <title>capacitacion</title>
+         <link rel="stylesheet" href="style1.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">         
+    </head>
+<body>
+<section class="sub-section6">
+    <nav>
+        <a href="index.html"><img src="imagenes/logo2.png"></a>
+        <div class="nav-links" id="navlinks">  
+           <i class="fa fa-times-circle-o" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="certificacion.html">certificacion</a></li>
+                <li><a href="capacitacion.html">capacitacion</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <button class="switch" id="switch">
+        <span> <i class="fa fa-sun-o"></i></span>
+        <span><i class="fa fa-moon-o"></i></span>
+    </button>
+    <h1>capacitacion</h1>
+</section>
+
+<section class="h1"><h1 >toca las imagenes</h1></section>
+
+
+<section >
+     
+    <div class="row">
+        <div class="content-all">
+           
+            <div class="content-img">
+                
+                <img src="https://cdn.pixabay.com/photo/2017/04/16/19/25/soap-bubble-2235614__340.jpg">
+                
+                <div class="content-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequuntur quasi illo vitae fugiat necessitatibus, culpa incidunt fugit ad porro molestiae quod molestias natus ipsa architecto laborum soluta et temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quos consectetur est eligendi, sapiente quaerat cupiditate velit, sit voluptatum repellendus perspiciatis mollitia minus totam!</p>                
+                </div>
+    
+                <div class="content-1"></div>
+                <div class="content-2"></div>
+    
+            </div>
+            <div class="content-img">
+                
+                <img src="https://cdn.pixabay.com/photo/2017/04/16/19/25/soap-bubble-2235614__340.jpg">
+                
+                <div class="content-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, nobis neque eveniet ab officiis vel expedita quaerat voluptates qui commodi alias fugiat laborum deleniti quidem repellat sunt quia a doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quos consectetur est eligendi, sapiente quaerat cupiditate velit, sit voluptatum repellendus perspiciatis mollitia minus totam!</p>                
+                </div>
+    
+                <div class="content-1"></div>
+                <div class="content-2"></div>
+    
+            </div>
+            <div class="content-img">
+                
+                <img src="https://cdn.pixabay.com/photo/2017/04/16/19/25/soap-bubble-2235614__340.jpg">
+                
+                <div class="content-txt">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quos consectetur est eligendi, sapiente quaerat cupiditate velit, sit voluptatum repellendus perspiciatis mollitia minus totam!</p>                
+                </div>
+    
+                <div class="content-1"></div>
+                <div class="content-2"></div>
+    
+            </div>
+        </div>
+    </div>   
+</section>
+
+
+
+<section class="section7">
+    <h4>sobre nosotros</h4>
+    <p><!--text here--></p>
+    <div class="icons">
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=ES" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=525591902164&text=Hola!" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    </div>
+</section>
+
+
+
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+
+
+
+    const btnSwitch = document.querySelector('#switch');
+
+    btnSwitch.addEventListener('click' , () => {
+        document.body.classList.toggle('dark');
+
+        btnSwitch.classList.toggle('active');
+
+        if(document.body.classList.contains('dark')){
+		localStorage.setItem('dark-mode', 'true');
+	} else {
+		localStorage.setItem('dark-mode', 'false');
+	}
+
+    });
+
+    if(localStorage.getItem('dark-mode') === 'true'){
+	document.body.classList.add('dark');
+	btnSwitch.classList.add('active');
+} else {
+	document.body.classList.remove('dark');
+	btnSwitch.classList.remove('active');
+}
+
+</script>
+
+
+</body>    
+</html>
